@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
-  entry: 'src/index.ts',
+  entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -11,8 +11,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx$?/,
-        exclue: /node_modules/,
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
