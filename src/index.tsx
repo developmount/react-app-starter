@@ -4,7 +4,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import client from './graphql/apollo/client';
 
-const rootEl = document.getElementById('root');
+const rootEl = document.createElement('div');
+document.body.appendChild(rootEl);
 
 render(
   <ApolloProvider client={client}>
