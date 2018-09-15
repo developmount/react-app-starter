@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
